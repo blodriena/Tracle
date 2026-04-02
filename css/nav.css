@@ -211,7 +211,6 @@ a {
   justify-content: center;
 }
 
-/* Responsive nav */
 @media (max-width: 920px) {
   .nav {
     grid-template-columns: auto auto;

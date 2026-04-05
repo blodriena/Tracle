@@ -7,3 +7,23 @@ if (burger && links) {
     burger.setAttribute("aria-expanded", String(isOpen));
   });
 }
+
+const track = document.querySelector('.logos__track');
+
+if (track) {
+  let position = 0;
+  const speed = 0.6; 
+
+  function step() {
+    position -= speed;
+    
+    if (Math.abs(position) >= track.scrollWidth / 2) {
+      position = 0;
+    }
+    
+    track.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(step);
+  }
+
+  step();
+}

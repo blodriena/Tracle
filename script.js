@@ -8,22 +8,20 @@ if (burger && links) {
   });
 }
 
-const track = document.querySelector('.logos__track');
 
-if (track) {
-  let position = 0;
-  const speed = 0.6; 
+// const track = document.querySelector('.logos__track');
+// let position = 0;
+// let speed = 0.3;
 
-  function step() {
-    position -= speed;
-    
-    if (Math.abs(position) >= track.scrollWidth / 2) {
-      position = 0;
-    }
-    
-    track.style.transform = `translateX(${position}px)`;
-    requestAnimationFrame(step);
-  }
+// function animate(){
+//   position -= speed;
 
-  step();
-}
+//   if(Math.abs(position) >= track.scrollWidth / 2){
+//     position = 0;
+//   }
+
+//   track.style.transform = `translateX(${position}px)`;
+//   requestAnimationFrame(animate);
+// }
+
+// animate();
